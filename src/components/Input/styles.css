@@ -1,0 +1,45 @@
+.Input {
+    display: flex;
+}
+
+.Input input[type="text"] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px var(--input-border-style) var(--primary-color);
+    color: white;
+    padding: 0 10px;
+    font-weight: bold;
+    width: 100%;
+    transition: opacity 0.2s ease;
+    opacity: 0.7;
+    box-sizing: content-box;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.2rem;
+}
+
+.Input input[type="text"]:focus {
+    opacity: 1;
+}
+
+.Input button:focus,
+.Input button:hover {
+    opacity: 1;
+    background-color: var(--primary-color);
+}
+
+.Input button {
+    opacity: 0.7;
+    transition: opacity 0.6s linear;
+    transition: background-color 0.2s linear;
+    margin-left: 5px;
+    cursor: pointer;
+    padding: 0 10px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: #efefef;
+    font-size: 1.5rem;
+    font-weight: bold;
+}

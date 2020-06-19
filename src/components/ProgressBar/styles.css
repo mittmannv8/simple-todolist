@@ -1,0 +1,21 @@
+.ProgressBar {
+    position: relative;
+    display: block;
+    height: 10px;
+    width: 100%;
+    background-color: #222;
+    border-radius: 10px;
+    flex: 1;
+    overflow: hidden;
+}
+
+.ProgressBar-progress {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    height: 10px;
+    border-radius: 10px;
+    transition: width .2s ease;
+}
